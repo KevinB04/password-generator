@@ -20,8 +20,8 @@ function writePassword() {
 
 }
 
-
 function generatePassword() {
+  /// return "temporary password";
 
   alert("Welcome! Need a password?");
 
