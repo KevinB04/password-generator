@@ -25,10 +25,10 @@ function generatePassword() {
 
   alert("Welcome! Need a password?");
 
-var password = prompt("Would you like uppercase, lowercase, numeric, or special characters?");
+var password = confirm("Please use a variety of uppercase, lowercase, numeric, and special characters");
   console.log(password);
 
-var lengthOfPassword = confirm("Please include special characters, such as $, &, #, @, etc.");
+var lengthOfPassword = confirm("Special characters include $, &, #, @, *, /, etc.");
   console.log(lengthOfPassword);
 
 var lengthOfPassword = prompt("Choose a password length between 8-128 characters");
@@ -40,6 +40,10 @@ var lengthOfPassword = prompt("Choose a password length between 8-128 characters
   } else {
     
   }
+
+  
+
+
   /// if (confirm("Would you like uppercase, lowercase, numeric, or special characters?")) {
     /// for (let i = 0; i < 3; i++){
       /// passwordArray.push(upperCaseArray[i]);
