@@ -11,7 +11,7 @@ var upperCaseArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"
 var lowerCaseArray = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var numericArray = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
 var specialArray = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "^", "`", "|", "~"];
-var passwordArray = [];
+
 
 
 // Write password to the #password input
@@ -29,6 +29,18 @@ function getOptions() {
 
   alert("Welcome! Need a password?");
 
+  var hasLower = confirm("Would you like lowercase?");
+  console.log(hasLower);
+
+  var hasUpper = confirm("How about uppercase?");
+  console.log(hasUpper);
+
+  var hasNumbers = confirm("Would you like numbers?");
+  console.log(hasNumbers);
+
+  var hasSpecial = confirm("Would you like special characters?");
+    console.log(hasSpecial);
+
   var lengthOfPassword = parseInt(prompt("Choose a password length between 8-128 characters"));
   console.log(lengthOfPassword);
   
@@ -41,22 +53,9 @@ function getOptions() {
     return;
   }
   if(isNaN(lengthOfPassword) === true) {
-    alert("numbers only");
+    alert("Password must be more than 8 characters");
     return;
   }
-
-
-var hasLower = confirm("Lower Ok?");
-  console.log(hasLower);
-
-var hasUpper = confirm("Upper Ok?");
-  console.log(hasUpper);
-
-var hasNumbers = confirm("Would you like numbers?");
-  console.log(hasNumbers);
-  
-var hasSpecial = confirm("Would you like special characters?");
-    console.log(hasSpecial);
 
     var options = {
       lengthOfPassword,
@@ -71,7 +70,7 @@ var hasSpecial = confirm("Would you like special characters?");
 
 function generatePassword() {
   var options = getOptions();
-  console.log(options)
+  console.log(options);
   var mainArray = [];
   var results = [];
 
@@ -99,23 +98,4 @@ function generatePassword() {
   return results.join("")
 }
 
-
-
-
-  /// if (confirm("Would you like u ppercase, lowercase, numeric, or special characters?")) {
-    /// for (let i = 0; i < 3; i++){
-      /// passwordArray.push(upperCaseArray[i]);
-    /// }
-  
-
-  /// if (confirm("Please include special characters, such as $, &, #, @, etc.")) {
-    /// Math.floor(Math.random() * passwordArray.length)
-  /// }
-
-  
-
-
-
-
-// Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
