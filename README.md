@@ -2,7 +2,7 @@
 
 ## Installation
 
-In order to run this app, you should fork the repo, clone it, and open in your default browser.
+In order to run this app, you should fork the repo, clone it, and open in your default browser. To use the page, hit the "Generate Password" button. You will be taken through a series of prompts in order to retrieve your password.
 
 ## Usage
 
