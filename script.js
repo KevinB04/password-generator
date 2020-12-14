@@ -43,11 +43,11 @@ function getOptions() {
 
   var lengthOfPassword = parseInt(prompt("Choose a password length between 8-128 characters"));
   console.log(lengthOfPassword);
-  
-  if(lengthOfPassword < 8) {
+  if(lengthOfPassword < 8 || lengthOfPassword > 128) {
     alert("more than 8");
     return;
   }
+
   if(lengthOfPassword > 128) {
     alert("less than 128");
     return;
