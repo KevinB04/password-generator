@@ -6,7 +6,7 @@ In order to run this app, you should fork the repo, clone it, and open in your d
 
 ## Usage
 
-https://user-images.githubusercontent.com/73902490/101714972-9b36c600-3a68-11eb-945b-5e5ec054db24.png
+[Password Generator](https://user-images.githubusercontent.com/73902490/101714972-9b36c600-3a68-11eb-945b-5e5ec054db24.png)
 
 ## Credits
 
