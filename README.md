@@ -16,4 +16,4 @@ Corey Yates, my tutor, has been an enormous help in guiding me through the proce
 
 ## License
 
-MIT (https://choosealicense.com/licenses/mit/) Copyright (c) [2020] [Kevin Buttimer]
+[MIT](https://choosealicense.com/licenses/mit/) Copyright (c) [2020] [Kevin Buttimer]
